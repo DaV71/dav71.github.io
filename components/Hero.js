@@ -25,7 +25,7 @@ const Hero = () => {
           className="max-w-4xl mx-auto"
         >
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-            <span className="text-white">Twoja Firma</span>
+            <span className="text-white">IT Solutions</span>
           </h1>
           
           <motion.p

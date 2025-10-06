@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [intervalRef, setIntervalRef] = useState(null);
 
   const testimonials = [
     {
@@ -13,7 +14,7 @@ const Testimonials = () => {
       company: "TechCorp Sp. z o.o.",
       content: "Współpraca z Twoją Firmą przyniosła nam niesamowite rezultaty. Ich profesjonalne podejście i innowacyjne rozwiązania pomogły nam zwiększyć efektywność o 40% w ciągu pierwszych 6 miesięcy.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
     },
     {
       id: 2,
@@ -61,23 +62,41 @@ const Testimonials = () => {
       );
     }, 5000);
 
+    setIntervalRef(interval);
+
     return () => clearInterval(interval);
   }, [testimonials.length]);
+
+  // Function to reset auto-rotation interval
+  const resetInterval = () => {
+    if (intervalRef) {
+      clearInterval(intervalRef);
+    }
+    const newInterval = setInterval(() => {
+      setCurrentIndex((prevIndex) => 
+        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000);
+    setIntervalRef(newInterval);
+  };
 
   const nextTestimonial = () => {
     setCurrentIndex((prevIndex) => 
       prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
     );
+    resetInterval();
   };
 
   const prevTestimonial = () => {
     setCurrentIndex((prevIndex) => 
       prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
     );
+    resetInterval();
   };
 
   const goToTestimonial = (index) => {
     setCurrentIndex(index);
+    resetInterval();
   };
 
   const renderStars = (rating) => {
@@ -111,7 +130,7 @@ const Testimonials = () => {
           </p>
         </motion.div>
 
-        <div className="relative max-w-4xl mx-auto">
+        <div className="relative max-w-4xl mx-auto overflow-hidden">
           {/* Testimonial Card */}
           <motion.div
             key={currentIndex}
@@ -119,7 +138,7 @@ const Testimonials = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.5 }}
-            className="bg-white rounded-2xl shadow-xl p-8 md:p-12 text-center"
+            className="bg-white rounded-2xl shadow-xl p-6 sm:p-8 md:p-12 text-center w-full"
           >
             {/* Stars */}
             <div className="flex justify-center mb-6">
@@ -127,13 +146,13 @@ const Testimonials = () => {
             </div>
 
             {/* Quote */}
-            <blockquote className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
+            <blockquote className="text-base sm:text-lg md:text-xl text-gray-700 mb-8 leading-relaxed break-words">
               &quot;{testimonials[currentIndex].content}&quot;
             </blockquote>
 
             {/* Author Info */}
             <div className="flex flex-col items-center">
-              <Image
+              <img
                 src={testimonials[currentIndex].avatar}
                 alt={testimonials[currentIndex].name}
                 className="w-16 h-16 rounded-full object-cover mb-4"
@@ -155,20 +174,20 @@ const Testimonials = () => {
           {/* Navigation Arrows */}
           <button
             onClick={prevTestimonial}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-shadow duration-200 text-gray-600 hover:text-primary-600"
+            className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 sm:p-3 shadow-lg hover:shadow-xl transition-shadow duration-200 text-gray-600 hover:text-primary-600 z-10"
             aria-label="Poprzednia opinia"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
 
           <button
             onClick={nextTestimonial}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-shadow duration-200 text-gray-600 hover:text-primary-600"
+            className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 sm:p-3 shadow-lg hover:shadow-xl transition-shadow duration-200 text-gray-600 hover:text-primary-600 z-10"
             aria-label="Następna opinia"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>

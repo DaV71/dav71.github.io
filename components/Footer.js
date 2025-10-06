@@ -44,7 +44,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="container-max">
+      <div className="container-max px-4 sm:px-6 lg:px-8">
         <div className="py-12">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Company Info */}
@@ -55,7 +55,7 @@ const Footer = () => {
               viewport={{ once: true }}
               className="lg:col-span-2"
             >
-              <h3 className="text-2xl font-bold mb-4">Twoja Firma</h3>
+              <h3 className="text-2xl font-bold mb-4">IT Solutions</h3>
               <p className="text-gray-300 mb-6 max-w-md">
                 Innowacyjne rozwiązania dla Twojego biznesu. 
                 Profesjonalne usługi na najwyższym poziomie.
@@ -120,7 +120,7 @@ const Footer = () => {
         >
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Twoja Firma. Wszystkie prawa zastrzeżone.
+              © {currentYear} IT Solutions. Wszystkie prawa zastrzeżone.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
