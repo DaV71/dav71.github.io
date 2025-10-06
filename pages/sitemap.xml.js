@@ -33,11 +33,15 @@ function generateSiteMap(posts) {
  `;
 }
 
-function SiteMap() {
-  // getServerSideProps will do the heavy lifting
+function SiteMap({ sitemap }) {
+  return (
+    <div>
+      <pre>{sitemap}</pre>
+    </div>
+  );
 }
 
-export async function getServerSideProps({ res }) {
+export async function getStaticProps() {
   const postsDirectory = path.join(process.cwd(), 'blog');
   const filenames = fs.readdirSync(postsDirectory);
   
@@ -55,13 +59,10 @@ export async function getServerSideProps({ res }) {
   // We generate the XML sitemap with the posts data
   const sitemap = generateSiteMap(posts);
 
-  res.setHeader('Content-Type', 'text/xml');
-  // we send the XML to the browser
-  res.write(sitemap);
-  res.end();
-
   return {
-    props: {},
+    props: {
+      sitemap,
+    },
   };
 }
 
