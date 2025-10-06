@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Blog = () => {
   const articles = [
@@ -93,7 +94,7 @@ const Blog = () => {
                   {article.excerpt}
                 </p>
                 
-                <a
+                <Link
                   href={`/blog/${article.slug}`}
                   className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium transition-colors"
                 >
@@ -101,7 +102,7 @@ const Blog = () => {
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </a>
+                </Link>
               </div>
             </motion.article>
           ))}
