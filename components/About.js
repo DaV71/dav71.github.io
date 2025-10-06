@@ -29,7 +29,7 @@ const About = () => {
           >
             <Image
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-              alt="Zespół firmy"
+              alt="Zespół IT Solutions - specjaliści od tworzenia stron internetowych"
               width={600}
               height={400}
               className="rounded-lg shadow-lg"
@@ -44,20 +44,45 @@ const About = () => {
             className="space-y-6"
           >
             <h3 className="text-2xl font-semibold text-gray-900">
-              Jesteśmy innowacyjną firmą
+              IT Solutions - Tworzenie stron internetowych od 2014 roku
             </h3>
             
             <p className="text-gray-600 leading-relaxed">
-              Od ponad 10 lat dostarczamy najwyższej jakości usługi naszym klientom. 
-              Nasza firma specjalizuje się w tworzeniu rozwiązań, które naprawdę 
-              działają i przynoszą wymierne korzyści biznesowe.
+              Od ponad 10 lat specjalizujemy się w tworzeniu profesjonalnych stron internetowych 
+              i aplikacji webowych. Nasza firma powstała z pasji do nowoczesnych technologii 
+              i chęci pomocy przedsiębiorcom w rozwoju ich biznesu online.
             </p>
             
             <p className="text-gray-600 leading-relaxed">
-              Zespół doświadczonych ekspertów, nowoczesne technologie i 
-              indywidualne podejście do każdego projektu to nasze główne atuty. 
-              Dzięki temu możemy zagwarantować sukces Twojego przedsięwzięcia.
+              Zespół doświadczonych programistów, projektantów UX/UI i specjalistów SEO 
+              tworzy strony, które nie tylko wyglądają profesjonalnie, ale także 
+              generują realne wyniki biznesowe. Każdy projekt traktujemy indywidualnie, 
+              dostosowując rozwiązania do specyfiki branży i celów klienta.
             </p>
+
+            <div className="bg-blue-50 p-6 rounded-lg mt-6">
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">Nasze wartości:</h4>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span>Jakość ponad wszystko - używamy tylko sprawdzonych technologii</span>
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span>Transparentność - jasne ceny i terminowe realizacje</span>
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span>Wsparcie po realizacji - pomagamy w rozwoju i utrzymaniu</span>
+                </li>
+              </ul>
+            </div>
 
             <div className="grid grid-cols-2 gap-6 pt-6">
               <div className="text-center">
@@ -65,16 +90,16 @@ const About = () => {
                 <div className="text-sm text-gray-600">Lat doświadczenia</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-600 mb-2">500+</div>
-                <div className="text-sm text-gray-600">Zadowolonych klientów</div>
+                <div className="text-3xl font-bold text-primary-600 mb-2">200+</div>
+                <div className="text-sm text-gray-600">Stron internetowych</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-600 mb-2">1000+</div>
-                <div className="text-sm text-gray-600">Zrealizowanych projektów</div>
+                <div className="text-3xl font-bold text-primary-600 mb-2">50+</div>
+                <div className="text-sm text-gray-600">Sklepów WooCommerce</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-600 mb-2">24/7</div>
-                <div className="text-sm text-gray-600">Wsparcie techniczne</div>
+                <div className="text-3xl font-bold text-primary-600 mb-2">30+</div>
+                <div className="text-sm text-gray-600">Aplikacji Java</div>
               </div>
             </div>
           </motion.div>

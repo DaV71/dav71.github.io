@@ -7,8 +7,8 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
-          alt="Hero Background"
+          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+          alt="Tworzenie stron internetowych - profesjonalne rozwiązania webowe"
           fill
           className="object-cover"
           priority
@@ -25,17 +25,18 @@ const Hero = () => {
           className="max-w-4xl mx-auto"
         >
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-            <span className="text-white">IT Solutions</span>
+            <span className="text-white">Tworzymy strony internetowe,</span><br />
+            <span className="text-blue-400">które rozwijają Twój biznes</span>
           </h1>
           
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl sm:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto"
+            className="text-xl sm:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto"
           >
-            Innowacyjne rozwiązania dla Twojego biznesu. 
-            Profesjonalne usługi na najwyższym poziomie.
+            Profesjonalne wizytówki w Next.js, strony WordPress, sklepy WooCommerce 
+            i aplikacje webowe Java Spring Boot. Od 2000 zł za wizytówkę.
           </motion.p>
 
           <motion.div
@@ -48,13 +49,13 @@ const Hero = () => {
               href="#contact"
               className="btn-primary inline-block text-center"
             >
-              Skontaktuj się z nami
+              Bezpłatna wycena projektu
             </a>
             <a
               href="#services"
               className="btn-secondary inline-block text-center"
             >
-              Nasze usługi
+              Zobacz nasze usługi
             </a>
           </motion.div>
         </motion.div>

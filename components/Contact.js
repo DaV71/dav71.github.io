@@ -116,6 +116,11 @@ const Contact = () => {
               <p className="text-gray-600">Poniedziałek - Piątek: 9:00 - 18:00</p>
               <p className="text-gray-600">Sobota: 10:00 - 14:00</p>
               <p className="text-gray-600">Niedziela: Zamknięte</p>
+              <div className="mt-4 pt-4 border-t border-primary-200">
+                <p className="text-sm text-gray-600">
+                  <strong>Bezpłatna wycena:</strong> Odpowiadamy w ciągu 24h
+                </p>
+              </div>
             </div>
           </motion.div>
 

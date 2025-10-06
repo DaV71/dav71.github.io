@@ -1,172 +1,191 @@
-# Business Card Website
+# IT Solutions - Strona Internetowa Firmy Tworzącej Strony WWW
 
-Profesjonalna strona wizytówka firmy stworzona w Next.js z Tailwind CSS.
+Kompleksowa strona internetowa firmy specjalizującej się w tworzeniu stron internetowych, sklepów online i aplikacji webowych. Strona została zoptymalizowana pod kątem SEO i zawiera wszystkie niezbędne sekcje dla firmy web development.
 
-## 🚀 Funkcje
+## 🚀 Funkcjonalności
 
-- **Responsywny design** - Dostosowany do wszystkich urządzeń
-- **Nowoczesny interfejs** - Czytelny i profesjonalny wygląd
-- **Animacje** - Płynne efekty wizualne z Framer Motion
-- **Formularz kontaktowy** - Integracja z Formspree
-- **SEO-optimized** - Meta tagi i semantyczny HTML
-- **Szybkość** - Zoptymalizowane obrazy i kod
+### Sekcje strony:
+- **Hero** - Główna sekcja z CTA i opisem firmy
+- **O nas** - Historia firmy, wartości i statystyki
+- **Usługi** - Szczegółowe opisy technologii (Next.js, WordPress, WooCommerce, Java)
+- **Portfolio** - Przykładowe realizacje z wynikami
+- **Opinie** - Testimonials od klientów
+- **Blog** - Artykuły SEO i poradniki
+- **FAQ** - Najczęściej zadawane pytania
+- **Kontakt** - Formularz kontaktowy i dane firmy
+- **Stopka** - Linki i informacje prawne
 
-## 📋 Wymagania
+### Technologie:
+- **Next.js** - Framework React
+- **Tailwind CSS** - Stylowanie
+- **Framer Motion** - Animacje
+- **Responsive Design** - Optymalizacja mobilna
 
-- Node.js 18+ 
-- npm lub yarn
+## 📋 Zawartość SEO
 
-## 🛠 Instalacja
+### Meta dane:
+- **Title:** "IT Solutions - Tworzenie Stron Internetowych | Next.js, WordPress"
+- **Description:** "Profesjonalne tworzenie stron internetowych w Next.js, WordPress, WooCommerce. Sklepy internetowe i aplikacje webowe Java Spring Boot. Od 2000 zł za wizytówkę."
+- **Keywords:** "tworzenie stron internetowych, strony www na zamówienie, Next.js, WordPress, WooCommerce, sklepy internetowe, aplikacje webowe Java Spring Boot"
 
-1. **Sklonuj repozytorium:**
-   ```bash
-   git clone <repository-url>
-   cd business-card-website
-   ```
+### Słowa kluczowe:
+- **Główne:** "tworzenie stron internetowych", "strony www na zamówienie"
+- **Długi ogon:** "profesjonalne wizytówki internetowe w Next.js", "optymalizacja SEO dla stron WordPress"
+- **Lokalne:** "tworzenie stron internetowych Warszawa", "sklepy internetowe WooCommerce"
 
-2. **Zainstaluj zależności:**
-   ```bash
-   npm install
-   ```
+## 💰 Cennik usług
 
-3. **Skonfiguruj formularz kontaktowy:**
-   
-   **Opcja A: Formspree (zalecane)**
-   - Przejdź na [formspree.io](https://formspree.io)
-   - Utwórz nowy formularz
-   - Skopiuj ID formularza
-   - W pliku `components/Contact.js` zastąp `YOUR_FORM_ID` swoim ID:
-   ```javascript
-   const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-   ```
+### Wizytówki Next.js
+- **Cena:** od 2000 zł
+- **Zawiera:** Responsywny design, SEO, szybkie ładowanie, łatwa edycja treści
 
-   **Opcja B: Netlify Forms**
-   - Dodaj `netlify` do atrybutu `name` w formularzu
-   - Dodaj ukryte pole: `<input type="hidden" name="_to" value="your-email@example.com" />`
+### Strony WordPress
+- **Cena:** od 3000 zł
+- **Zawiera:** Custom themes, panel administracyjny, integracje, backup
 
-4. **Uruchom projekt lokalnie:**
-   ```bash
-   npm run dev
-   ```
+### Sklepy WooCommerce
+- **Cena:** od 5000 zł
+- **Zawiera:** Integracja płatności, zarządzanie produktami, optymalizacja konwersji
 
-5. **Otwórz w przeglądarce:**
-   ```
-   http://localhost:3000
-   ```
+### Aplikacje Java Spring Boot
+- **Cena:** od 15000 zł
+- **Zawiera:** Architektura mikroserwisów, bezpieczeństwo, skalowalność
 
-## 🏗 Budowanie
+## 📊 Przykładowe realizacje
+
+### 1. Restauracja Bella Vista (WordPress)
+- **Wyniki:** +60% rezerwacji, +40% ruchu organicznego
+- **Technologie:** WordPress, WooCommerce, Custom Theme, SEO
+
+### 2. Sklep Moda Fashion (WooCommerce)
+- **Wyniki:** +150% sprzedaży, +80% konwersji, ROI 300%
+- **Technologie:** WooCommerce, Stripe, Mailchimp, Google Analytics
+
+### 3. Agencja Marketingowa Pro (Next.js)
+- **Wyniki:** +90% szybkość ładowania, +50% ruchu, 100% Lighthouse Score
+- **Technologie:** Next.js, Tailwind CSS, Headless CMS, Vercel
+
+### 4. System Zarządzania Firmą (Java Spring Boot)
+- **Wyniki:** -70% czasu na administrację, +200% produktywność
+- **Technologie:** Java Spring Boot, Angular, PostgreSQL, Docker
+
+## 📝 Artykuły blogowe
+
+### 1. "Jak wybrać technologię do tworzenia strony internetowej? Poradnik 2025"
+- **Słowa kluczowe:** "wybór technologii strony internetowej", "Next.js vs WordPress"
+- **Długość:** 800 słów
+- **Struktura:** H1, H2, H3, listy, tabele porównawcze
+
+### 2. "Optymalizacja SEO dla sklepów WooCommerce - 10 sprawdzonych metod"
+- **Słowa kluczowe:** "optymalizacja SEO WooCommerce", "SEO sklep internetowy"
+- **Długość:** 1200 słów
+- **Struktura:** H1, H2, H3, numerowane listy, przykłady kodu
+
+### 3. "Next.js vs WordPress - Która technologia wygra w 2025 roku?"
+- **Słowa kluczowe:** "Next.js vs WordPress", "porównanie technologii webowych"
+- **Długość:** 1000 słów
+- **Struktura:** H1, H2, H3, tabele porównawcze, case studies
+
+## ❓ FAQ - Najczęściej zadawane pytania
+
+1. **Ile kosztuje stworzenie strony internetowej w Next.js?**
+   - Od 2000 zł za wizytówkę
+
+2. **Jak długo trwa realizacja projektu?**
+   - Wizytówka Next.js: 2-3 tygodnie
+   - Strona WordPress: 3-4 tygodnie
+   - Sklep WooCommerce: 4-6 tygodni
+
+3. **Czy oferujecie wsparcie po uruchomieniu?**
+   - Tak, 3 miesiące bezpłatnego wsparcia
+
+4. **Jakie technologie używacie do sklepów?**
+   - Głównie WooCommerce i PrestaShop
+
+5. **Czy strony są zoptymalizowane pod SEO?**
+   - Tak, wszystkie strony są SEO-friendly
+
+## 📞 Dane kontaktowe
+
+- **Adres:** ul. Web Development 15, 00-001 Warszawa
+- **Telefon:** +48 500 123 456
+- **Email:** kontakt@webdevpro.pl
+- **Godziny pracy:** Pon-Pt 9:00-18:00, Sob 10:00-14:00
+
+## 🛠 Instalacja i uruchomienie
 
 ```bash
+# Instalacja zależności
+npm install
+
+# Uruchomienie w trybie deweloperskim
+npm run dev
+
 # Budowanie dla produkcji
 npm run build
 
-# Eksport statyczny (dla Netlify)
-npm run export
+# Uruchomienie wersji produkcyjnej
+npm start
 ```
 
-## 🚀 Wdrożenie
+## 📁 Struktura plików
 
-### Vercel (zalecane)
-
-1. **Zainstaluj Vercel CLI:**
-   ```bash
-   npm i -g vercel
-   ```
-
-2. **Wdróż:**
-   ```bash
-   vercel
-   ```
-
-3. **Lub połącz z GitHub:**
-   - Przejdź na [vercel.com](https://vercel.com)
-   - Połącz swoje repozytorium GitHub
-   - Vercel automatycznie wdroży projekt
-
-### Netlify
-
-1. **Zbuduj projekt:**
-   ```bash
-   npm run export
-   ```
-
-2. **Wdróż folder `out`:**
-   - Przejdź na [netlify.com](https://netlify.com)
-   - Przeciągnij folder `out` do obszaru wdrożenia
-   - Lub połącz z GitHub dla automatycznego wdrażania
-
-## 🎨 Dostosowywanie
-
-### Kolory
-Edytuj `tailwind.config.js`:
-```javascript
-colors: {
-  primary: {
-    // Zmień kolory główne
-    500: '#3b82f6', // Niebieski
-    600: '#2563eb',
-  }
-}
+```
+├── components/
+│   ├── Hero.js          # Sekcja główna
+│   ├── About.js         # O firmie
+│   ├── Services.js      # Usługi
+│   ├── Portfolio.js     # Realizacje
+│   ├── Testimonials.js  # Opinie klientów
+│   ├── Blog.js          # Artykuły blogowe
+│   ├── FAQ.js           # Najczęściej zadawane pytania
+│   ├── Contact.js       # Kontakt
+│   └── Footer.js        # Stopka
+├── pages/
+│   └── index.js         # Strona główna
+├── blog/                # Artykuły blogowe (markdown)
+└── styles/
+    └── globals.css      # Style globalne
 ```
 
-### Treść
-- **Nazwa firmy:** `pages/index.js` (title, meta tags)
-- **Hero section:** `components/Hero.js`
-- **O nas:** `components/About.js`
-- **Usługi:** `components/Services.js`
-- **Kontakt:** `components/Contact.js`
-- **Stopka:** `components/Footer.js`
+## 🎯 Optymalizacja SEO
 
-### Obrazy
-Zastąp URL obrazów w komponentach:
-- Hero: `components/Hero.js` linia 12
-- About: `components/About.js` linia 25
+### Elementy SEO na stronie:
+- ✅ Meta title i description
+- ✅ Struktura nagłówków H1-H6
+- ✅ Alt text dla obrazów
+- ✅ Wewnętrzne linkowanie
+- ✅ Schema markup
+- ✅ Sitemap
+- ✅ Robots.txt
+- ✅ Core Web Vitals
 
-### Ikony
-Użyj [Heroicons](https://heroicons.com) lub [Lucide](https://lucide.dev) dla spójnych ikon.
+### Słowa kluczowe docelowe:
+- "tworzenie stron internetowych"
+- "strony www na zamówienie"
+- "sklepy internetowe WooCommerce"
+- "aplikacje webowe Java Spring Boot"
+- "wizytówki internetowe Next.js"
+- "optymalizacja SEO WordPress"
 
-## 📱 Responsywność
+## 📈 Statystyki firmy
 
-Projekt używa Tailwind CSS z breakpointami:
-- `sm:` - 640px+
-- `md:` - 768px+
-- `lg:` - 1024px+
-- `xl:` - 1280px+
+- **10+** lat doświadczenia
+- **200+** stron internetowych
+- **50+** sklepów WooCommerce
+- **30+** aplikacji Java
 
-## ⚡ Optymalizacja
+## 🔧 Wymagania techniczne
 
-- **Obrazy:** Używa Next.js Image component
-- **Fonty:** Google Fonts z preconnect
-- **CSS:** Tailwind CSS z purging
-- **JavaScript:** Code splitting automatyczny
-
-## 🔧 Rozwiązywanie problemów
-
-### Błąd formularza
-- Sprawdź czy ID Formspree jest poprawne
-- Sprawdź czy formularz jest aktywny na Formspree
-- Sprawdź konsolę przeglądarki pod kątem błędów
-
-### Problemy z obrazami
-- Sprawdź czy URL obrazów są dostępne
-- Użyj lokalnych obrazów w folderze `public/`
-
-### Problemy z wdrożeniem
-- Sprawdź czy wszystkie zależności są zainstalowane
-- Sprawdź logi wdrożenia na platformie
+- Node.js 16+
+- npm lub yarn
+- Next.js 13+
+- React 18+
 
 ## 📄 Licencja
 
-Ten projekt jest dostępny na licencji MIT.
-
-## 🤝 Wsparcie
-
-Jeśli masz pytania lub potrzebujesz pomocy:
-- Sprawdź dokumentację Next.js
-- Sprawdź dokumentację Tailwind CSS
-- Sprawdź dokumentację Formspree
+Projekt jest własnością IT Solutions. Wszystkie prawa zastrzeżone.
 
 ---
 
-**Miłego kodowania! 🎉**
-
+**IT Solutions** - Profesjonalne tworzenie stron internetowych od 2014 roku

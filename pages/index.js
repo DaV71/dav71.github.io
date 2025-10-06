@@ -3,7 +3,10 @@ import { useState } from 'react';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Services from '../components/Services';
+import Portfolio from '../components/Portfolio';
 import Testimonials from '../components/Testimonials';
+import Blog from '../components/Blog';
+import FAQ from '../components/FAQ';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
@@ -20,25 +23,25 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>IT Solutions - Profesjonalne usługi IT i cyfryzacja</title>
-        <meta name="description" content="IT Solutions - Innowacyjne rozwiązania IT dla Twojego biznesu. Profesjonalne usługi cyfryzacji, konsulting technologiczny, rozwój oprogramowania i wsparcie techniczne." />
-        <meta name="keywords" content="IT Solutions, usługi IT, cyfryzacja, konsulting technologiczny, rozwój oprogramowania, wsparcie techniczne, transformacja cyfrowa" />
+        <title>IT Solutions - Tworzenie Stron Internetowych | Next.js, WordPress</title>
+        <meta name="description" content="Profesjonalne tworzenie stron internetowych w Next.js, WordPress, WooCommerce. Sklepy internetowe i aplikacje webowe Java Spring Boot. Od 2000 zł za wizytówkę." />
+        <meta name="keywords" content="tworzenie stron internetowych, strony www na zamówienie, Next.js, WordPress, WooCommerce, sklepy internetowe, aplikacje webowe Java Spring Boot, wizytówki internetowe, optymalizacja SEO" />
         <meta name="author" content="IT Solutions" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://twojafirma.pl/" />
-        <meta property="og:title" content="IT Solutions - Profesjonalne usługi IT i cyfryzacja" />
-        <meta property="og:description" content="IT Solutions - Innowacyjne rozwiązania IT dla Twojego biznesu. Profesjonalne usługi cyfryzacji i wsparcie techniczne." />
-        <meta property="og:image" content="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" />
+        <meta property="og:url" content="https://itsolutions.pl/" />
+        <meta property="og:title" content="IT Solutions - Profesjonalne Strony Internetowe" />
+        <meta property="og:description" content="Tworzymy strony internetowe, które rozwijają Twój biznes. Next.js, WordPress, WooCommerce, aplikacje Java Spring Boot. Sprawdź nasze realizacje!" />
+        <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://twojafirma.pl/" />
-        <meta property="twitter:title" content="IT Solutions - Profesjonalne usługi IT i cyfryzacja" />
-        <meta property="twitter:description" content="IT Solutions - Innowacyjne rozwiązania IT dla Twojego biznesu. Profesjonalne usługi cyfryzacji i wsparcie techniczne." />
-        <meta property="twitter:image" content="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" />
+        <meta property="twitter:url" content="https://itsolutions.pl/" />
+        <meta property="twitter:title" content="IT Solutions - Profesjonalne Strony Internetowe" />
+        <meta property="twitter:description" content="Tworzymy strony internetowe, które rozwijają Twój biznes. Next.js, WordPress, WooCommerce, aplikacje Java Spring Boot." />
+        <meta property="twitter:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" />
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
@@ -108,6 +111,12 @@ export default function Home() {
                   <a href="#services" className="text-gray-600 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">
                     Usługi
                   </a>
+                  <a href="#portfolio" className="text-gray-600 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">
+                    Portfolio
+                  </a>
+                  <a href="#blog" className="text-gray-600 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">
+                    Blog
+                  </a>
                   <a href="#contact" className="text-gray-600 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">
                     Kontakt
                   </a>
@@ -161,6 +170,20 @@ export default function Home() {
                 Usługi
               </a>
               <a
+                href="#portfolio"
+                onClick={closeMobileMenu}
+                className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors"
+              >
+                Portfolio
+              </a>
+              <a
+                href="#blog"
+                onClick={closeMobileMenu}
+                className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors"
+              >
+                Blog
+              </a>
+              <a
                 href="#contact"
                 onClick={closeMobileMenu}
                 className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors"
@@ -182,7 +205,10 @@ export default function Home() {
         <Hero />
         <About />
         <Services />
+        <Portfolio />
         <Testimonials />
+        <Blog />
+        <FAQ />
         <Contact />
         <Footer />
       </main>

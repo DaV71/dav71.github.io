@@ -10,27 +10,27 @@ const Testimonials = () => {
     {
       id: 1,
       name: "Anna Kowalska",
-      position: "Dyrektor Generalny",
-      company: "TechCorp Sp. z o.o.",
-      content: "Współpraca z Twoją Firmą przyniosła nam niesamowite rezultaty. Ich profesjonalne podejście i innowacyjne rozwiązania pomogły nam zwiększyć efektywność o 40% w ciągu pierwszych 6 miesięcy.",
+      position: "Właścicielka",
+      company: "Restauracja Bella Vista",
+      content: "Strona internetowa stworzona przez IT Solutions przyniosła nam niesamowite rezultaty! Liczba rezerwacji online wzrosła o 60%, a nasza restauracja jest teraz widoczna w Google. Profesjonalne podejście i terminowa realizacja.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
     },
     {
       id: 2,
       name: "Michał Nowak",
-      position: "Prezes Zarządu",
-      company: "Innova Solutions",
-      content: "Zespół wykazał się niezwykłą wiedzą techniczną i kreatywnością. Projekt został zrealizowany na czas i przekroczył nasze oczekiwania. Polecam każdemu, kto szuka profesjonalnych usług.",
+      position: "Dyrektor",
+      company: "Moda Fashion Sp. z o.o.",
+      content: "Sklep WooCommerce stworzony przez IT Solutions przekroczył nasze oczekiwania. Sprzedaż wzrosła o 150%, a system jest bardzo intuicyjny w obsłudze. Polecam każdemu, kto myśli o sprzedaży online.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
     },
     {
       id: 3,
       name: "Katarzyna Wiśniewska",
-      position: "Dyrektor Marketingu",
-      company: "Digital Agency Pro",
-      content: "Szkolenia przeprowadzone przez Twoją Firmę były na najwyższym poziomie. Nasz zespół zdobył nowe umiejętności, które bezpośrednio przełożyły się na wyniki sprzedażowe. Bardzo polecam!",
+      position: "Prezes",
+      company: "Agencja Marketingowa Pro",
+      content: "Wizytówka w Next.js to strzał w dziesiątkę! Strona ładuje się błyskawicznie, wygląda profesjonalnie i generuje więcej zapytań od klientów. Szkolenie z obsługi było bardzo pomocne.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
     },
@@ -38,17 +38,17 @@ const Testimonials = () => {
       id: 4,
       name: "Piotr Zieliński",
       position: "Właściciel",
-      company: "StartupHub",
-      content: "Wsparcie techniczne jest dostępne 24/7 i zawsze otrzymujemy szybką pomoc. To daje nam pewność, że nasze systemy działają bez przerw. Profesjonalizm na najwyższym poziomie.",
+      company: "Gabinet Stomatologiczny",
+      content: "System umawiania wizyt online zmienił sposób pracy naszego gabinetu. 80% umówień odbywa się teraz przez stronę internetową. Wsparcie techniczne jest zawsze dostępne i pomocne.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
     },
     {
       id: 5,
       name: "Magdalena Krawczyk",
-      position: "Dyrektor Finansowy",
-      company: "FinanceMax",
-      content: "Konsulting biznesowy pomógł nam zoptymalizować procesy i zaoszczędzić znaczące koszty. Zespół wykazał się głęboką wiedzą branżową i praktycznym podejściem do rozwiązywania problemów.",
+      position: "Dyrektor IT",
+      company: "Firma Konsultingowa",
+      content: "Aplikacja Java Spring Boot stworzona przez IT Solutions zrewolucjonizowała nasze procesy biznesowe. Czas na administrację skrócił się o 70%, a produktywność wzrosła o 200%. Najlepsza inwestycja!",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
     }
